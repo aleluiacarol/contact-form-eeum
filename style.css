@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+body, button, input, select, textarea {
+    font-family: 'Roboto', sans-serif;  
+}
+
+body {
+    background: rgb(131,20,43);
+    background: radial-gradient(circle, rgba(131,20,43,1) 0%, rgba(46,2,2,1) 100%);
+}
+
+*{
+    box-sizing: border-box;
+ }
+
+html, body {
+    margin: 0;
+}
+
+:root {
+    --marsala: #83142B;
+    --light-grey: #8D8783;
+}
+
+
+.form-container {
+    background: white;
+    width: 900px;
+    height: 600px;
+    margin: 80px auto;
+}
+
+
+form {
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+   }
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.info img {
+    width: 160px;
+    padding: 40px 30px 0px;
+    float: left;
+}
+
+ .info h1 {
+    padding: 15px 0px 0px;  
+    margin-bottom: 0px;
+    float: left;
+    Justify-content: center;    
+}
+
+.info p {
+    margin: 0 auto 20px;   
+    color: var(--light-grey); 
+}
+
+form .input-container, .form-select-curso, .form-select-pais {
+    width: 350px;
+    height: 35px;
+    display: inline-grid;
+}
+   
+.form-select-curso + .form-select-pais {
+    margin: 0px 0px 30px 20px;
+}
+
+form .input-container {
+    margin: 0 10px 30px 10px;
+}
+
+.questao {
+    display: grid;
+    width: 720px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.questao label {
+    display: grid;
+    justify-content: start;
+    width: 725px;
+    padding-bottom: 7px; 
+}
+
+.options-container {
+    display: grid;
+    width: 725px;
+    justify-content: start;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.enviar-label {
+    display: grid;
+    width: 150px;
+    height: 35px;
+    margin: auto;    
+}
+
+.enviar-label input {
+    cursor: pointer;
+}
+
+.enviar-label:hover {
+    top:-2px;
+    box-shadow:0 2px 2px var(--light-grey);
+} 
+
+form .form-select-curso select, .form-select-pais select, .input-container input, .questao textarea, .enviar-label input {
+    color: var(--light-grey);
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 2px;
+    border-width: 2px;
+    border-color: var(--light-grey);
+    border-radius: 3px;
+    outline: 0;
+}
+
+form .form-select-curso select, .form-select-pais select {
+    border-style: solid;
+}
+
+form .input-container input {
+    padding-left: 6px;
+    border-top: solid 2px var(--light-grey);
+    border-left: solid 2px var(--light-grey);
+}
+
+.enviar-label input {
+    color: white;
+    background: var(--marsala)
+}
+
+textarea::placeholder {
+    padding-left: 2px;
+}
